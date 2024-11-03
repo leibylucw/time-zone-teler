@@ -1,5 +1,8 @@
 # Time Zone Teler
-An app to announce the current time in multiple time zones
+An app to announce the current time in multiple time zones for screen reader users
+
+## **IMPORTANT NOTE**
+This project is intended to help a friend out to hear the current time in multiple time zones using a single keyboard shortcut. It was developed specifically for them, and is not reflective of best practices/conventions I follow.
 
 ## Setup and Quickstart
 ### Install System Dependencies

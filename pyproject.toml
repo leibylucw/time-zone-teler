@@ -1,7 +1,7 @@
 [project]
 name = "time-zone-teler"
 version = "0.1.0"
-description = "An app to announce the current time in multiple time zones"
+description = "An app to announce the current time in multiple time zones for screen reader users"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
