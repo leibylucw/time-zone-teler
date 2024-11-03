@@ -1,0 +1,46 @@
+[project]
+name = "time-zone-teler"
+version = "0.1.0"
+description = "An app to announce the current time in multiple time zones"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "keyboard>=0.13.5",
+    "pytz>=2024.2",
+    "tolk",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["timeZoneTeller"]
+
+[tool.uv.sources]
+tolk = { path = "vendor/tolk-python" }
+
+[project.scripts]
+main = "timeZoneTeller.main:main"
+
+[tool.ruff]
+line-length = 120
+output-format = "grouped"
+show-fixes = true
+target-version = "py312"
+
+[tool.ruff.format]
+docstring-code-format = true
+indent-style = "tab"
+line-ending = "lf"
+quote-style = "single"
+
+[tool.ruff.lint]
+select = [
+	"I001", # Import block is un-sorted or un-formatted
+	"I002", # Missing required import: {name}
+	"W505", # pycodestyle -> Warning -> "Doc line too long"
+]
+
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 120
