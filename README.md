@@ -59,3 +59,17 @@ Finally, to run the main script:
 ```shell
 uv run main
 ```
+
+## Building
+You may compile a binary of the app using [pyinstaller](https://www.pyinstaller.org). It was installed using uv to initialize the project. The project contains a `main.spec` file which defines the build process, so you should only need to run the following command:
+
+```shell
+uv run pyinstaller build.spec
+```
+
+You should see a resulting executable in `dist/Time Zone Teller.exe`.
+
+## Using the App
+Once launching the app, either via an executable or Python, you have two commands available to you:
+1. `alt+ctrl+t`: announce the current time in your own time zone, as well as America/New_York, Europe/London, and Asia/Tehran.
+2. `alt+ctrl+q`: quit the app.
